@@ -5,8 +5,9 @@ from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import config
+import token
 
-bot = Bot(config.token)
+bot = Bot(token.token)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 test_data = None
